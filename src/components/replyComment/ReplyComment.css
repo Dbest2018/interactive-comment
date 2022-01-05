@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.text__field {
+  flex: 1;
+  margin: 0 20px;
+  border: 1px solid rgba(131, 123, 123, 0.15);
+}
+
+.send__button {
+  background-color: hsl(238, 40%, 52%);
+}

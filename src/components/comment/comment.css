@@ -2,10 +2,14 @@
   display: flex;
   margin-bottom: 20px;
   padding: 10px;
+  width: 750px;
   border: 1px solid white;
-  width: fit-content;
   border-radius: 10px;
   background-color: white;
+}
+
+.reply {
+  margin-left: 50px;
 }
 
 .leftside {

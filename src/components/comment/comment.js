@@ -4,15 +4,15 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import ReplyIcon from "@mui/icons-material/Reply";
 import Avatar from "@mui/material/Avatar";
 
-// import image from "../../images/avatars/image-amyrobson.png";
+import image from "../../images/avatars/image-amyrobson.png";
 
-import "./comment.css";
+import "./Comment.css";
 
-const Comment = ({ avatar, name, time, comment }) => {
+const Comment = ({ avatar, name, time, comment, reply }) => {
   const [upvote, setUpvote] = useState(0);
 
   return (
-    <div className="container">
+    <div className={reply ? `container ${reply}` : "container"}>
       <div className="leftside">
         <AddIcon
           className="icon"
@@ -27,7 +27,11 @@ const Comment = ({ avatar, name, time, comment }) => {
       <div className="rightside">
         <div className="rightside__header">
           <div className="left">
-            <Avatar alt="profile picture" src={avatar} />
+            <Avatar
+              alt="profile picture"
+              src={image}
+              onClick={() => console.log(avatar)}
+            />
             <div className="username">{name}</div>
             <div className="time__sent">{time}</div>
           </div>
