@@ -7,7 +7,6 @@ import Avatar from "@mui/material/Avatar";
 import image from "../../images/avatars/image-amyrobson.png";
 
 import "./Comment.css";
-import ReplyComment from "../replyComment/ReplyComment";
 
 const Comment = ({ avatar, name, time, comment, reply }) => {
   const [upvote, setUpvote] = useState(0);
