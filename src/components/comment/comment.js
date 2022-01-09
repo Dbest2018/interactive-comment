@@ -4,8 +4,6 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import ReplyIcon from "@mui/icons-material/Reply";
 import Avatar from "@mui/material/Avatar";
 
-import image from "../../images/avatars/image-amyrobson.png";
-
 import "./Comment.css";
 
 const Comment = ({ avatar, name, time, comment, reply }) => {
@@ -29,7 +27,7 @@ const Comment = ({ avatar, name, time, comment, reply }) => {
           <div className="left">
             <Avatar
               alt="profile picture"
-              src={image}
+              src={""}
               onClick={() => console.log(avatar)}
             />
             <div className="username">{name}</div>
