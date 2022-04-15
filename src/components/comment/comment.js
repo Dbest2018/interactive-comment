@@ -10,7 +10,7 @@ const Comment = ({ avatar, name, time, comment, reply }) => {
   const [upvote, setUpvote] = useState(0);
 
   return (
-    <div className={reply ? `container ${reply}` : "container"}>
+    <div className={reply ? "reply-container" : "container"}>
       <div className="leftside">
         <AddIcon
           className="icon"
